@@ -2,14 +2,77 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Магазин мороженого Глейси</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="logo-link" href="index.html">
+            <img class="logo-link-image" src="/img/logo.svg" alt="Логотип Глейси" width="137" height="55">
+        </a>
+        <ul class="site-menu-list">
+            <li class="site-menu-item">
+                <a class="site-menu-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-menu-item">
+                <a class="site-menu-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="site-menu-item">
+                <a class="site-menu-link" href="#">О компании</a>
+            </li>
+        </ul>
 
+        <!-- Пользовательское меню Академия обернула в div - почему? семантичнее ли список ul? stackoverflow: по сути, можно и так, и сяк, но некоторые пишут, что ul семантичнее -->
+
+        <ul class="nav-list nav-user"><li class="nav-item">
+            <a class="nav-link" href="#">
+              <a class="nav-user-phone" href="tel.:+78128121212">+7 800 555-86-28</a>
+            </a>
+        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Вход</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-button" href="#">Хочу сюда!</a>
+                <!-- я поставила тег button, но у Академии a с классом button -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <span class="visually-hidden">
+                      Корзина
+                  </span>
+                  <span class="nav-counter-button">2 товара</span>
+              </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
+    <main class="page-main">
+      <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
+
+      <section class="slider">
+
+        <p class="slider-title">Нежный пломбир с клубничным джемом</p>
+        <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+        <a class="slider-button button" href="#">Заказать</a>
+
+        <ul class="slider-pagination">
+          <li class="slider-pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+          </li>
+          <li class="pagination-item">
+              <a class="pagination-link pagination-next pagination-disabled">
+                  <span class="visually-hidden">Следующая страница</span>
+              </a>
+          </li>
+
+      </ul>
+
+
+      </section>
 
     </main>
 
